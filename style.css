@@ -1,21 +1,43 @@
 body {
-  background-color: #FFFFE0; 
-  font-family: Arial, sans-serif;
-  color: #191970;
-  }
+    background-color: #FFFFE0;
+    font-family: Arial, sans-serif;
+    color: #191970;
+}
 
 .kartu-profil {
-  width: 150px;
-  margin: 50px auto;
-  padding: 15px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     text-align: center;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px; /* Membuat sudut latar belakang kartu tetap persegi melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-|
 
-  .kartu-profil img {
-  width: 150px;
-  border-radius: 50%;
+.kartu-profil img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Agar foto tidak gepeng/terdistorsi */
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    margin-bottom: 15px;
+}
+
+.kartu-profil h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.kartu-profil p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.kartu-profil a {
+    color: #4169E1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kartu-profil a:hover {
+    text-decoration: underline;
 }
