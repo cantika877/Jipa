@@ -1,43 +1,64 @@
 body {
-    background-color: #FFFFE0;
-    font-family: Arial, sans-serif;
+    background-color: #FFFFE0; 
+    font-family: Arial, sans-serif; 
     color: #191970;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .kartu-profil {
     width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 15px; /* Membuat sudut latar belakang kartu tetap persegi melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    padding: 25px; 
+    background-color: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
 
-.kartu-profil img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover; /* Agar foto tidak gepeng/terdistorsi */
-    border-radius: 50%; /* Membuat foto menjadi bulat */
+.kartu-profil img { 
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-bottom: 15px;
+    border: 3px solid #191970;
 }
 
 .kartu-profil h1 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
 .kartu-profil p {
     font-size: 14px;
-    margin-bottom: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #444;
 }
 
+/* Gaya untuk Tombol & Link */
+.kartu-profil button, 
 .kartu-profil a {
-    color: #4169E1;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #191970;
+    color: #ffffff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
+    font-size: 14px;
     font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
+.kartu-profil button:hover, 
 .kartu-profil a:hover {
-    text-decoration: underline;
+    background-color: #323285;
 }
